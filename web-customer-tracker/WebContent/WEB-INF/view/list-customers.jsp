@@ -4,7 +4,13 @@
 <html>
 
 <head>
-<title>List Customers</title>
+	<title>List Customers</title>
+	
+	<!-- reference our style sheet -->
+	
+	<link type="text/css"
+		  rel="stylesheet"
+		  href="${pageContext.request.contextPath}/resources/css/style.css" />
 </head>
 
 <body>
@@ -24,7 +30,7 @@
 					<th>Email</th>
 				</tr>
 
-				<!-- loop over and pring our customers -->
+				<!-- loop over and print our customers -->
 				<c:forEach var="tempCustomer" items="${customers}">
 					<tr>
 						<td>${tempCustomer.firstName }</td>
